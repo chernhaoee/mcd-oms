@@ -1,0 +1,25 @@
+{
+  "name": "mcdonalds-order-controller",
+  "version": "1.0.0",
+  "description": "McDonald's automated order controller for cooking bots",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node test/OrderController.test.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "mcdonalds",
+    "order-controller",
+    "automation",
+    "queue-management"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
