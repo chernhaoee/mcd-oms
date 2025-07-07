@@ -6,6 +6,7 @@ class Order {
     this.createdAt = new Date();
     this.processingStartTime = null;
     this.completedAt = null;
+    this.completedByBotId = null;
   }
 
   startProcessing() {
@@ -13,9 +14,10 @@ class Order {
     this.processingStartTime = new Date();
   }
 
-  complete() {
+  complete(botId) {
     this.status = 'COMPLETE';
     this.completedAt = new Date();
+    this.completedByBotId = botId;
   }
 
   resetToPending() {

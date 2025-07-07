@@ -27,7 +27,7 @@ class Bot {
 
   completeOrder(onComplete) {
     if (this.currentOrder) {
-      this.currentOrder.complete();
+      this.currentOrder.complete(this.id);
       const completedOrder = this.currentOrder;
       
       this.reset();
