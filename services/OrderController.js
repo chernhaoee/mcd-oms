@@ -9,7 +9,7 @@ class OrderController {
     this.nextBotId = 1;
   }
 
-  createOrder(type = 'NORMAL') {
+  createOrder(type = 'NORMAL', botId = null) {
     const order = new Order(this.nextOrderId++, type);
     
     // Insert order based on priority
