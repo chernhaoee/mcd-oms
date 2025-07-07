@@ -176,7 +176,7 @@ class CLI {
         const processingTime = Math.floor((order.completedAt.getTime() - order.processingStartTime.getTime()) / 1000);
         const orderType = order.type === 'VIP' ? '⭐ VIP' : '👤 Normal';
         const completedTime = order.completedAt.toLocaleTimeString();
-        console.log(`     Order #${order.id} (${orderType}): Completed in ${processingTime}s at ${completedTime}`);
+        console.log(`     Order #${order.id} (${orderType}): Completed in ${processingTime}s at ${completedTime} by Bot #${order.completedByBotId}`);
       });
     }
     
